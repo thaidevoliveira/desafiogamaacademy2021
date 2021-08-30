@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #10034b;
+    font-family: 'Popins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+body{   
+    
+    height: 100vh;
+    background: linear-gradient( 180deg, #00bf5f,#4040fa,#1901b5);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #068f94;
+    margin-bottom: 50px;
+}
+
+header div img{
+    max-width: 100px;
+}
+
+header ul{
+    display: flex;
+
+}
+
+header ul li{
+    padding: 10px;
+
+}
+
+header ul li a:hover {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #7fffd4;
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 100px;
+}
+
+.container .name h5{
+    font-size: 20px;
+}
+
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px ;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+
+.form button {
+    width: 15%;
+    padding: 15px 10px;
+    background: linear-gradient(to right,  #0800a7 50%, #35ff0d 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex div{
+    border: 1px solid #000;
+    margin: 15px;
+    flex-basis: 100%;
+    background-color: lavender;
+}
+
+.flex img{
+    width: 60%;
+}
+
+@media only screen and (max-width:1024px){
+    .form{
+        width: 100%;
+    }
+
+    .flex div{
+        width: 60px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1{
+        font-size: 30px;
+    }
+
+    .container .name h5{
+        font-size: 15px
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align:justify;
+    }
+
+}
